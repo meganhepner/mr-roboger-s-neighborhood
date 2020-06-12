@@ -1,10 +1,10 @@
 //Business Logic
 function MrRobo(number){
   
-  let indices = [];
+  // let indices = [];
   let array = number.split('');
   // let element = "1";
-  let index = array.indexOf("1");
+
  
 
   // while (index != -1){
@@ -12,8 +12,10 @@ function MrRobo(number){
   //   index = str.indexOf(element, index+1);
   // }
 
-  if (index !== -1){
+  for (let i =0; i < array.length; i++){
+    let index = array.indexOf("1");
     array[index] = "Beep!";
+ 
   };
   
   
