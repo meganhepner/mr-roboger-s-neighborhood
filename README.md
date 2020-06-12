@@ -21,9 +21,14 @@
 | :-------------     | :------------- | :------------- |
 | **The program only accepts whole numbers** | -4 | HTML number alert |
 | **The program returns a range of numbers from 0 to the users inputted number** | 4 | "0, 1, 2, 3, 4" |
-| **If the inputted number contains a 3, return "Won't you be my neighbor** | 123 | "Won't you be my neighbor |
-| **If the inputted number has no 3 but contains a 2 return "Boop"** | 542 |  "Boop" |
-| **If the inputted number has no 3 or 2 but contains a 1 return "Beep"** | 415 | "Beep" |
+| **If input number contains a 3 replace with "Won't you be my neighbor?"** | 13 | Won't you be my neighbor? |
+| **If input number contains a 2 but not a 3 replace with "Boop!"** | 21 | Boop! |
+| **If 
+| **Replace 3 in array with "Won't you be my neighbor** | [0,1,2,3] | 0, 1, 2, Won't you be my neighbor |
+| **Replace 2 in array with "Boop!** | [0,1,2,3] | 0, 1, Boop!, 3 |
+| **Replace 1 in array with "Beep!!** | [0,1,2,3] | 0, Beep! , 2, 3 |
+
+
 
 
 ## Support and contact details
