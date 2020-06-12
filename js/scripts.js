@@ -1,25 +1,27 @@
 //Business Logic
 function MrRobo(number){
-  
-  // let indices = [];
-  let array = number.split('');
-  // let element = "1";
-
- 
-
-  // while (index != -1){
-  //   indices.push(index);
-  //   index = str.indexOf(element, index+1);
-  // }
+   let array = number.split('');
 
   for (let i =0; i < array.length; i++){
     let index = array.indexOf("1");
-    array[index] = "Beep!";
- 
+    array[index] = " Beep!";
+ };
+  
+  for (let i =0; i < array.length; i++){
+    let index = array.indexOf("2");
+    array[index] = " Boop!";
   };
+
+  for (let i =0; i < array.length; i++){
+    let index = array.indexOf("3");
+    array[index] = " Won't you be my neighbor?";
+  };
+
+  return array;
+
+ 
   
-  
-return array;
+
   //  if (number.indexOf("1") > -1){
   //   let index = number.indexOf
   // ;
