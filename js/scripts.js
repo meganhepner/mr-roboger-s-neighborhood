@@ -16,8 +16,9 @@ function MrRobo(number){
       }
         numbers[1] = " Beep!";
         numbers[2] = " Boop!";
-        numbers[3] = "Won't you be my neighbor?"
-        return numbers;
+        numbers[3] = " Won't you be my neighbor?"
+        const nice = numbers.toString().split(', ');
+        return nice;
     };
   };
 
