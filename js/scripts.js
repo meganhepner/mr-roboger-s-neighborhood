@@ -1,15 +1,27 @@
 //Business Logic
 function MrRobo(number){
   
+  let indices = [];
+  let str = number;
+  // let str = [number.split('')];
+  let element = "1";
+  let index = str.indexOf(element);
+ 
 
-  let str = number.split('');
-  if(str.includes("1")){
-    console.log('yay');
+  while (index != -1){
+    indices.push(index);
+    index = str.indexOf(element, index+1);
+  }
+  
+console.log(indices);
+  //  if (number.indexOf("1") > -1){
+  //   let index = number.indexOf
+  // ;
   }
   
 
 
-}
+
 
 
 //User Logic
