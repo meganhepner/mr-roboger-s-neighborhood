@@ -2,7 +2,14 @@
 function MrRobo(number){
 
   let array = [0];
-  while 
+  count = 0;
+
+  while (count < number){
+    count = count+1;
+    array.push(count);
+    console.log(array);
+  }
+};
 
 
 //   for (let i = 0; i <= number; i++){
