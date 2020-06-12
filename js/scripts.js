@@ -13,29 +13,13 @@ function MrRobo(number){
         while (count < number){
         count = count+1;
         numbers.push(count);
+      }
         numbers[1] = " Beep!";
-        console.log(numbers);
-       }
-        // let index = numbers.indexOf("1");
-        // numbers[index] = " Beep!";
-        // console.log(numbers);
-     };
+        numbers[2] = " Boop!";
+        numbers[3] = "Won't you be my neighbor?"
+        return numbers;
     };
-
-     
-      
-      // for (let i =0; i < numbers.length; i++){
-      //   let index = numbers.indexOf("2");
-      //   numbers[index] = " Boop!";
-      // };
-    
-      // for (let i =0; i < numbers.length; i++){
-      //   let index = numbers.indexOf("3");
-      //   numbers[index] = " Won't you be my neighbor?";
-      // };
-
-
-
+  };
 
 //User Logic
 $(document).ready(function() {
