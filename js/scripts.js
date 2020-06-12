@@ -1,10 +1,12 @@
 //Business Logic
 function MrRobo(number){
   
-  let numbers = [];
+
   let str = number.split('');
-  numbers.push(str);
-  return numbers;
+  if(str.includes("1")){
+    console.log('yay');
+  }
+  
 
 
 }
