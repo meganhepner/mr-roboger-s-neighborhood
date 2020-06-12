@@ -1,16 +1,12 @@
-FUNCTIONING CODE
+# _Mr Robober's Neighborhood_
 
 
-
-# _shouting-machine_
-
-
-#### _starting out with forms, 6.3.20_
+#### _Working With Loops, 6.12.20_
 
 #### By _**Megan Hepner**_
 
 ## Description
-  This webpage experiments with creating a form, gathering the inputted sentence, and returning it to the user. When the sentence is returned it is written in all capital letters
+  This webpage is an overview of lessons learned in Week 3 of Epicodus. It 
 
 
 ## Setup/Installation Requirements
@@ -19,6 +15,16 @@ FUNCTIONING CODE
 * to clone this content, copy the url provided by the 'clone or download' button in GitHub
 * in terminal use the command 'git clone (GitHub url)'
 * open the content in a web browser
+
+### Specs
+| Spec | Input | Output |
+| :-------------     | :------------- | :------------- |
+| **The program only accepts whole numbers** | -4 |  |
+| **The program returns a range of numbers from 0 to the users inputted number** | 4 | "0, 1, 2, 3, 4" |
+| **If the inputted number contains a 3, return "Won't you be my neighbor** | 123 | "Won't you be my neighbor |
+| **If the inputted number has no 3 but contains a 2 return "Boop"** | 542 |  "Boop" |
+| **If the inputted number has no 3 or 2 but contains a 1 return "Beep"** | 415 | "Beep" |
+
 
 ## Support and contact details
 
