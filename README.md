@@ -19,7 +19,7 @@
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **The program only accepts whole numbers** | -4 |  |
+| **The program only accepts whole numbers** | -4 | HTML number alert |
 | **The program returns a range of numbers from 0 to the users inputted number** | 4 | "0, 1, 2, 3, 4" |
 | **If the inputted number contains a 3, return "Won't you be my neighbor** | 123 | "Won't you be my neighbor |
 | **If the inputted number has no 3 but contains a 2 return "Boop"** | 542 |  "Boop" |
