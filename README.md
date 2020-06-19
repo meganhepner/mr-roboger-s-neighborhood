@@ -5,7 +5,7 @@
 #### By _**Megan Hepner**_
 
 ## Description
-  This webpage is an overview of lessons learned in Week 3 of Epicodus. A form takes user input as a whole number between 1 and 100. It then tests whether the number contains a 1, 2, or 3 and presents Mr Roboger's unique reply to each of those numbers. If the input number does not contain a 1, 2, or 3 the program returns an array of all numbers up to and including the inputted number, with Mr. Roboger's replies replacing the values at 1, 2, and 3.
+  This webpage is an overview of lessons learned in Week 3 of Epicodus. A form takes user input as a whole number between 1 and 100. It then creates a string of numbers counting up to that number, incrementing by 1. Each of the numbers in the string that include a 3 are replaced by "Won't you be my neighbor". Each of the numbers that include a 2 but not a 3 are replaced by "Boop!". Each of the numbers that include a 1 but not a 2 or 3 are replaced by "Beep!"
 
 ## Setup/Installation Requirements
 
@@ -17,13 +17,11 @@
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **If input number contains a 3 output "Won't you be my neighbor?"** | 13 | Won't you be my neighbor? |
-| **If input number contains a 2 but not a 3 output "Boop!"** | 21 | Boop! |
-| **If input number contains a 1 but not a 2 or 3 output "Beep!** | 15 | Beep! |
-| **If input number does not contain a 1, 2, or 3, the program returns an array of numbers from 0 to the users inputted number** | 4 | "0, 1, 2, 3, 4" |
-| **Replace 3 in array with "Won't you be my neighbor** | [0,1,2,3] | 0, 1, 2, Won't you be my neighbor |
-| **Replace 2 in array with "Boop!** | [0,1,2,3] | 0, 1, Boop!, 3 |
-| **Replace 1 in array with "Beep!!** | [0,1,2,3] | 0, Beep! , 2, 3 |
+| **Program returns an array of numbers from 0 to the users inputted number** | 4 | "0, 1, 2, 3, 4" |
+| **Program replaces all numbers in array that include 3 with "Won't you be my neighbor** | 3 | 0, 1, 2, Won't you be my neighbor |
+| **Program replaces all numbers in array that include 2 with "Boop!** | 2 | 0, 1, Boop!, Won't you be my neighbor |
+| **Program replaces all numbers in array that include 1 with "Beep!** | 1 | 0, Beep!, Boop!, Won't you be my neighbor |
+| **If number does not contain a 1,2, or 3, program displays numbers incrementing by 1 up through inputted number**| 10 | "0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!" |
 
 ## Support and contact details
 

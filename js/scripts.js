@@ -1,34 +1,35 @@
 //Business Logic
 function MrRobo(number){
-  if (number.includes("3")){
-    return "Won't you be my neighbor";
-    } else if (number.includes("2")){
-      return "Boop!"
-    } else if (number.includes(1)){
-      return "Beep!"
-    } else {
-      const number = parseInt($("input#number").val());
-      let numbers = [0];
-      count = 0;
-        while (count < number){
-        count = count+1;
-        numbers.push(count);
-      }
-        numbers[1] = " Beep!";
-        numbers[2] = " Boop!";
-        numbers[3] = " Won't you be my neighbor?"
-        const separate = numbers.join(', ');
-        
-        return separate;
-    };
-  };
+  let numbers = "";
+  for (i = 0; i <= number; i ++){
+    numbers = ((numbers + i) + ", ");
+  }
+  return numbers;
+}
 
-//User Logic
+function MrRoboReply(numbers){
+  let reply = [];
+  array = numbers.split(", ");
+  for(i = 0; i <= array.length-1; i++){
+    if (array[i].includes(3)){
+      reply.push("Won't you be my neighbor?");
+    } else if (array[i].includes(2)){
+      reply.push("Boop!")
+    } else if (array[i].includes(1)){
+      reply.push("Beep!")
+    } else 
+      reply.push(array[i]);
+  }
+  return reply
+}
+
+// //User Logic
 $(document).ready(function() {
   $("form#userNumber").submit(function(event) {
     event.preventDefault();
     const number = $("input#number").val();
-    const reply = MrRobo(number);
+    const array = MrRobo(number);
+    const reply = MrRoboReply(array);
     $("#result").text(reply);
     });
   });
